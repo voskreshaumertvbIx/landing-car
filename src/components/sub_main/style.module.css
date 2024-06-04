@@ -1,0 +1,61 @@
+.submain_container{
+
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: clamp(300px, 80%, 685px);
+
+  background-color: rgba(238, 241, 251, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+}
+
+.header_container{
+  margin-top: 5rem;
+  
+}
+.header_text{
+
+text-align: center;
+}
+.main_header{
+  margin-top: 25px;
+  font-size: 70px;
+  font-weight: bold;
+}
+.search_container{
+ 
+
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+  background-color:white;
+  border-radius: 40px;
+
+  margin-top: 2.5rem;
+}
+.search_list{
+  display: flex;
+
+  list-style-type: none;
+}
+.search_item{
+  margin-right: 8rem;
+}
+.search_icon{
+  margin: 0.5rem;
+
+  width: 55px;
+  height: 55px;
+}
+.car_background{
+ 
+  position: relative;
+  top: 4rem;
+ 
+}
+
