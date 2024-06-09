@@ -55,13 +55,13 @@ const car_icons = [
 
 const TypeCar = () => {
   return (
-    <div className={styles.main_container}>
+    <div className={styles.main_container} >
       <h1 className={styles.main_head}>Browse by Type</h1>
       <div className={styles.cars_section}>
         {
         car_icons.map(({src, name}, index)=>{
-          return <div className={styles.car_item}>
-            <img src={src} alt={name} key={index} />
+          return <div className={styles.car_item} key={index}>
+            <img src={src} alt={name}  />
             <p>{name}</p>
           </div>
         })
@@ -70,7 +70,7 @@ const TypeCar = () => {
         <div className={styles.car_action_section}>
           {
             car_action.map(({title, text, icon}, index)=>{
-              return <div className={styles.car_action_item}>
+              return <div className={styles.car_action_item}  key={index}>
                 <h2 className={styles.car_action_name}>{title}</h2>
                 <p className={styles.car_action_text}>{text}</p>
                 <div className={styles.footer}>
