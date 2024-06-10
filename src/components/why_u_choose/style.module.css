@@ -1,0 +1,46 @@
+.main_container{
+  margin: auto;
+  margin-top: 100px;
+ 
+
+  width: 90%;
+  height: clamp(330px, 430px, 500px);
+  background-color:#F9FBFC;
+  border-radius:16px
+}
+.main_header{
+  display: flex;
+  justify-content: center;
+
+ padding-top: 100px;
+
+
+
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  
+  text-transform: capitalize;
+}
+.card_container{
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+
+  margin: 30px 200px;
+}
+.card_name{
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: medium;
+  line-height: 24px;
+}
+.card_description{
+  margin-top: 10px;
+ 
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27.8px;
+
+}
