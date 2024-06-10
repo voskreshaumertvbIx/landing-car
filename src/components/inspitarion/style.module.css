@@ -1,0 +1,33 @@
+.inspiration_container{
+  margin: auto;
+  margin-top: 150px;
+  width: 72%;
+  
+}
+
+.header{
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+
+  text-transform: capitalize;
+}
+.button_item{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+
+  background-color: white;
+
+  border:1px solid #E1E1E1;
+  border-radius: 16px;
+
+  padding: 24px 22px;
+}
+.button_container{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+
+}
