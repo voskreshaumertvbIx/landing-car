@@ -1,4 +1,4 @@
-import React from 'react';
+
 import styles from './style.module.css'
 const inspiration = ['Automatic Cars', 'Suvs', 'Electric Cars', 'New in Stock', 'Petrol', 'Diesel']
 const Inspiration = () => {
@@ -9,7 +9,6 @@ const Inspiration = () => {
       {
         inspiration.map((text)=>{
           return <button className={styles.button_item}>{text}</button>
-          
         })
       }</div>
     </div>
