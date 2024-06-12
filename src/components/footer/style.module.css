@@ -1,0 +1,39 @@
+.footerContainer {
+  
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 150px; 
+  
+  border-bottom: 1px solid rgba(128, 128, 128, 0.151);
+}
+
+.footerSection {
+  flex: 1;
+ 
+}
+
+.footerSection h4 {
+  margin-bottom: 10px;
+}
+
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerSection ul li {
+  margin-bottom: 8px;
+}
+
+.socialLinks {
+  display: flex;
+  margin-top: 10px;
+}
+
+.socialLinks a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+

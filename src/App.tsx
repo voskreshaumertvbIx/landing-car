@@ -13,6 +13,8 @@ import Reviews from './components/reviews/reviews';
 import OurTeam from './components/our_team/our_team';
 import LatestBlog from './components/latest_blog/latest_blog';
 import PremiumBrands from './components/premium_brands/premium_brands';
+import Footer from './components/footer/footer';
+import PrivacyPolicy from './components/privacy_policy/privacy_policy';
 
 
 
@@ -31,6 +33,8 @@ function App() {
     <OurTeam/>
     <LatestBlog/>
     <PremiumBrands/>
+    <Footer/>
+    <PrivacyPolicy/>
    </div>
   );
 }
