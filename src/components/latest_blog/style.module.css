@@ -1,0 +1,55 @@
+.main_container {
+  margin: auto;
+  width: 90%;
+}
+
+.header {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+}
+
+.card_item {
+  position: relative;
+  margin: 0 15px;
+  max-width: 450px;
+}
+
+.card_tag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 17px;
+}
+
+.card_img {
+  border-radius: 16px;
+  width: 100%; 
+}
+
+.img_label, .textblog {
+  margin: 7px 0;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+ 
+}
+
+.textblog {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+  word-wrap: break-word; 
+}

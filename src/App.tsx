@@ -11,6 +11,7 @@ import { LatestCar } from './components/latest_cars/latest_car';
 import Inspiration from './components/inspitarion/inspiration';
 import Reviews from './components/reviews/reviews';
 import OurTeam from './components/our_team/our_team';
+import LatestBlog from './components/latest_blog/latest_blog';
 
 
 
@@ -27,6 +28,7 @@ function App() {
     <Inspiration/>
     <Reviews/>
     <OurTeam/>
+    <LatestBlog/>
    </div>
   );
 }
