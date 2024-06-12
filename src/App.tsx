@@ -12,6 +12,7 @@ import Inspiration from './components/inspitarion/inspiration';
 import Reviews from './components/reviews/reviews';
 import OurTeam from './components/our_team/our_team';
 import LatestBlog from './components/latest_blog/latest_blog';
+import PremiumBrands from './components/premium_brands/premium_brands';
 
 
 
@@ -29,6 +30,7 @@ function App() {
     <Reviews/>
     <OurTeam/>
     <LatestBlog/>
+    <PremiumBrands/>
    </div>
   );
 }
