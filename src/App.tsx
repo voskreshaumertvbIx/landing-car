@@ -10,6 +10,7 @@ import Whyuchoose from './components/why_u_choose/whyuchoose';
 import { LatestCar } from './components/latest_cars/latest_car';
 import Inspiration from './components/inspitarion/inspiration';
 import Reviews from './components/reviews/reviews';
+import OurTeam from './components/our_team/our_team';
 
 
 
@@ -25,6 +26,7 @@ function App() {
     <LatestCar />
     <Inspiration/>
     <Reviews/>
+    <OurTeam/>
    </div>
   );
 }
