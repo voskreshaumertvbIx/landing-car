@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@300&family=Lobster&display=swap");
+
 * {
   font-family: "DM Sans", sans-serif;
 }
-.header_container {
-  width: 100%;
-  height: 100px;
 
+.header_container {
+  max-width: 100%;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-   font-weight: 500;
-   font-size: 15px; 
+  font-weight: 500;
+  font-size: 15px;
 }
 
 .logo_container {
@@ -19,54 +19,205 @@
   justify-content: center;
   align-items: center;
 }
+
 .main_logo {
   width: 106px;
   height: 26px;
   margin-left: 3rem;
 }
+
 .phone_logo {
   width: 12px;
   height: 18px;
   margin-left: 2rem;
   margin-right: 0.5rem;
 }
+
 .phone_number {
-  
+ width: 120px;
 }
 
 .navigation_container {
- 
-
   display: flex;
-  align-items:center
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
+
 .navigation_list {
   display: flex;
   justify-content: center;
   align-items: center;
   list-style-type: none;
-  
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
 }
+
 .nav_text {
   margin-right: 1.5rem;
-  
   text-decoration: none;
   color: black;
 }
-.signin_icon{
-  width: 15px; height: 15px;
+
+.signin_icon {
+  width: 15px;
+  height: 15px;
   margin-right: 0.5rem;
 }
-.submit_button{
-  margin-right: 3rem;
 
+.submit_button {
+  margin-right: 3rem;
   border: 1px solid black;
   border-radius: 10px;
   padding: 10px 16px;
-
   background-color: white;
   font-weight: 500;
-   font-size: 15px; 
+  font-size: 15px;
+}
 
-  
+/* Стили для бургер-меню */
+.burger_menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: auto; 
+  margin-right: 2rem;
+}
+
+.burger_line {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+
+/* Полноэкранное меню */
+.fullscreen_menu {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.close_button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.fullscreen_navigation_list {
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+}
+
+.fullscreen_nav_text {
+  margin: 20px 0;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.fullscreen_nav_text {
+  color: white;
+  text-decoration: none;
+}
+
+/* Медиа-запросы для бургер-меню */
+@media (max-width: 992px) {
+  .burger_menu {
+    display: flex;
+  }
+
+  .navigation_list {
+    display: none;
+  }
+
+  .submit_button {
+    display: none;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .main_logo {
+    width: 90px;
+    height: 22px;
+    margin-left: 1rem; /* Уменьшение отступа */
+  }
+
+  .phone_logo {
+    width: 10px;
+    height: 15px;
+  }
+
+  .phone_number {
+    margin-left: 1rem; /* Уменьшение отступа */
+  }
+
+  .nav_text {
+    margin-right: 1rem;
+    font-size: 14px;
+  }
+
+  .submit_button {
+    padding: 8px 14px;
+    font-size: 14px;
+    margin-right: 1rem; /* Уменьшение отступа */
+  }
+}
+
+@media (max-width: 768px) {
+  .header_container {
+    padding: 0 1rem; /* Добавление отступов внутри контейнера */
+  }
+
+  .main_logo {
+    width: 80px;
+    height: 20px;
+    margin-left: 0.5rem; /* Уменьшение отступа */
+  }
+
+  .phone_logo {
+    width: 8px;
+    height: 12px;
+    margin-left: 0.5rem; /* Уменьшение отступа */
+  }
+
+  .phone_number {
+    margin-left: 0.5rem; /* Уменьшение отступа */
+  }
+
+  .nav_text {
+    font-size: 13px;
+  }
+
+  .submit_button {
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-right: 0.5rem; /* Уменьшение отступа */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav_text {
+    font-size: 12px;
+  }
+
+  .submit_button {
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-right: 0.5rem; /* Уменьшение отступа */
+  }
 }
