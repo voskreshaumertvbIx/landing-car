@@ -76,7 +76,7 @@
   font-size: 15px;
 }
 
-/* Стили для бургер-меню */
+
 .burger_menu {
   display: none;
   flex-direction: column;
@@ -94,7 +94,7 @@
   background-color: black;
 }
 
-/* Полноэкранное меню */
+
 .fullscreen_menu {
   position: absolute;
   bottom: 0;
@@ -134,7 +134,7 @@
   text-decoration: none;
 }
 
-/* Медиа-запросы для бургер-меню */
+
 @media (max-width: 992px) {
   .burger_menu {
     display: flex;
@@ -154,7 +154,7 @@
   .main_logo {
     width: 90px;
     height: 22px;
-    margin-left: 1rem; /* Уменьшение отступа */
+    margin-left: 1rem; 
   }
 
   .phone_logo {
@@ -163,7 +163,7 @@
   }
 
   .phone_number {
-    margin-left: 1rem; /* Уменьшение отступа */
+    margin-left: 1rem; 
   }
 
   .nav_text {
@@ -174,29 +174,29 @@
   .submit_button {
     padding: 8px 14px;
     font-size: 14px;
-    margin-right: 1rem; /* Уменьшение отступа */
+    margin-right: 1rem;
   }
 }
 
 @media (max-width: 768px) {
   .header_container {
-    padding: 0 1rem; /* Добавление отступов внутри контейнера */
+    padding: 0 1rem;
   }
 
   .main_logo {
     width: 80px;
     height: 20px;
-    margin-left: 0.5rem; /* Уменьшение отступа */
+    margin-left: 0.5rem;
   }
 
   .phone_logo {
     width: 8px;
     height: 12px;
-    margin-left: 0.5rem; /* Уменьшение отступа */
+    margin-left: 0.5rem; 
   }
 
   .phone_number {
-    margin-left: 0.5rem; /* Уменьшение отступа */
+    margin-left: 0.5rem;
   }
 
   .nav_text {
@@ -206,7 +206,7 @@
   .submit_button {
     padding: 6px 12px;
     font-size: 13px;
-    margin-right: 0.5rem; /* Уменьшение отступа */
+    margin-right: 0.5rem; 
   }
 }
 
@@ -218,6 +218,6 @@
   .submit_button {
     padding: 5px 10px;
     font-size: 12px;
-    margin-right: 0.5rem; /* Уменьшение отступа */
+    margin-right: 0.5rem; 
   }
 }

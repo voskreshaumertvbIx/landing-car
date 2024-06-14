@@ -1,105 +1,206 @@
-.main_container{
+.main_container {
   display: flex;
-  
-  align-items:center;
+  align-items: center;
   flex-direction: column;
- 
-  
+  padding: 0 1rem;
 }
 
-.main_head{
-margin-top: 10rem;
+.main_head {
+  margin-top: 10rem;
+  text-align: center;
 }
-.cars_section{
+
+.cars_section {
   display: flex;
   justify-content: center;
-  flex-direction: row;
-
+  flex-wrap: wrap;
   margin: 4rem 0;
-
   width: 90%;
-  
-  
 }
-.car_item{
+
+.car_item {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
-  
   border: 1px solid #E9E9E9;
-  border-radius:16px;
+  border-radius: 16px;
   width: clamp(80px, 10%, 140px);
   aspect-ratio: 14/12;
-  
-  margin: 0 10px;
-
-}
-.car_action_section{
-display: flex;
-justify-content: center;
-width: 100%;
-
+  margin: 0 10px 20px;
+  text-align: center;
 }
 
-.car_action_item{
-  
+.car_action_section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.car_action_item {
   width: clamp(400px, 80%, 600px);
   height: clamp(200px, 80%, 400px);
+  border-radius: 16px;
+  padding: 3rem;
+  margin: 0 7px 20px;
+  background-color: antiquewhite;
+}
 
- border-radius:16px;
+.car_action_item:first-child {
+  background-color: #E9F2FF;
+}
 
- padding: 3rem;
-  margin: 0 7px;
-  
-  background-color:antiquewhite
+.car_action_item:last-child {
+  background-color: #FFE9F3;
 }
-.car_action_item:first-child{
-  background-color:#E9F2FF;
-}
-.car_action_item:last-child{
-  background-color:#FFE9F3;
-}
-.car_action_name{
+
+.car_action_name {
   font-size: 30px;
   font-weight: bold;
   line-height: 45px;
-
   text-transform: capitalize;
-  
-
- 
-  width: 47%;
+  width: 50%;
 }
-.car_action_text{
+
+.car_action_text {
   font-size: 15px;
   line-height: 28px;
-
   margin: 14px 0;
-  width: 75%;
-  
+  width: 50%;
 }
-.submit_button{
 
-
+.submit_button {
   font-size: 15px;
   text-transform: capitalize;
-
   color: white;
-  background-color:#405FF2;
-
-  border:none;
+  background-color: #405FF2;
+  border: none;
   border-radius: 12px;
-
   width: 10rem;
   height: 4rem;
-
-}
-.car_action_item:last-child button{
-  background-color:#050B20;
+  cursor: pointer;
 }
 
-.footer{
+.car_action_item:last-child .submit_button {
+  background-color: #050B20;
+}
+
+.footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+  .main_head {
+    margin-top: 8rem;
+  }
+
+  .car_item {
+    width: clamp(80px, 15%, 130px);
+  }
+
+  .car_action_item {
+    width: clamp(350px, 75%, 550px);
+    height: auto;
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .main_head {
+    margin-top: 7rem;
+  }
+
+  .car_item {
+    width: clamp(70px, 20%, 120px);
+  }
+
+  .car_action_item {
+    width: clamp(300px, 70%, 500px);
+    height: auto;
+    padding: 2rem;
+  }
+
+  .car_action_name {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  .car_action_text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main_head {
+    margin-top: 5rem;
+  }
+
+  .car_item {
+    width: clamp(60px, 25%, 110px);
+  }
+
+  .car_action_item {
+    width: clamp(250px, 65%, 450px);
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .car_action_name {
+    font-size: 20px;
+    line-height: 45px;
+  }
+
+  .car_action_text {
+    font-size: 13px;
+    line-height: 28px;
+  }
+
+  .submit_button {
+    width: 8rem;
+    height: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .main_head {
+    margin-top: 3rem;
+    font-size: 1rem;
+  }
+
+  .car_item {
+    width: clamp(50px, 40%, 100px);
+  }
+
+  .car_action_item {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .car_action_name {
+    width: 100%;
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .car_action_text {
+    width: 100%;
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .submit_button {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 12px;
+  }
+  .car_action_icon{
+    display: none;
+  }
 }
