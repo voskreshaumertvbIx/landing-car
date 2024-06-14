@@ -24,7 +24,10 @@ const SubMain = () => {
       <div className={styles.search_container}>
         <ul className={styles.search_list}>
           {clarity.map(({ name }, index) => {
-            return <li className={styles.search_item} key={index}>{name}</li>;
+           return <div> <li className={styles.search_item} key={index}>{name}</li>
+           
+           </div>
+            
           })}
         </ul>
         <img className={styles.search_icon}src="./img/Buttonsearch_bar.svg" alt="" />
