@@ -2,10 +2,18 @@
 
 * {
   font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+}
+
+
 .header_container {
-  max-width: 100%;
+  width: 100vw;
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -86,37 +94,66 @@
   cursor: pointer;
   margin-left: auto; 
   margin-right: 2rem;
+
+  transition: transform 0.3s ease;
+
+ 
+}
+.burger_menu.open .burger_line:nth-child(1) {
+  transform: rotate(45deg) translate(7px,5px);
+  background-color: white;
+}
+
+.burger_menu.open .burger_line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger_menu.open .burger_line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -5px);
+  background-color: white;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Should be below the fullscreen menu */
+}
+.burger_menu.open {
+  z-index: 1001; 
+  position: relative;
 }
 
 .burger_line {
   width: 100%;
   height: 3px;
   background-color: black;
+  transition: transform 0.5s ease, opacity 0.3s ease; 
 }
-
-
 .fullscreen_menu {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  top:0;
+  right: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items:center;
   z-index: 1000;
-}
 
-.close_button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 30px;
-  cursor: pointer;
+  transform: translateY(-100%);
+  transition: transform 1s ease, opacity 0.5s ease;
+  
 }
-
+.fullscreen_menu.open {
+  transform: translateY(0);
+  transition: transform 1s ease, opacity 0.5s ease;
+  opacity: 1;
+}
 .fullscreen_navigation_list {
   list-style-type: none;
   text-align: center;
@@ -135,19 +172,7 @@
 }
 
 
-@media (max-width: 992px) {
-  .burger_menu {
-    display: flex;
-  }
 
-  .navigation_list {
-    display: none;
-  }
-
-  .submit_button {
-    display: none;
-  }
-}
 
 
 @media (max-width: 1200px) {
@@ -177,7 +202,19 @@
     margin-right: 1rem;
   }
 }
+@media (max-width: 992px) {
+  .burger_menu {
+    display: flex;
+  }
 
+  .navigation_list {
+    display: none;
+  }
+
+  .submit_button {
+    display: none;
+  }
+}
 @media (max-width: 768px) {
   .header_container {
     padding: 0 1rem;
@@ -220,4 +257,7 @@
     font-size: 12px;
     margin-right: 0.5rem; 
   }
+}
+body.menu-open, html.menu-open {
+  overflow: hidden;
 }

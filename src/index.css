@@ -1,4 +1,15 @@
+::-webkit-scrollbar {
+  display: none;
+}
 body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Отключить горизонтальную прокрутку */
+  box-sizing:border-box;
+}
+
+body {
+  width: 100vw;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

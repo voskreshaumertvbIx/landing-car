@@ -15,10 +15,26 @@ import LatestBlog from './components/latest_blog/latest_blog';
 import PremiumBrands from './components/premium_brands/premium_brands';
 import Footer from './components/footer/footer';
 import PrivacyPolicy from './components/privacy_policy/privacy_policy';
+import { useEffect } from 'react';
 
 
 
 function App() {
+  const handleResize = () => {
+    console.log('Window resized to:', window.innerWidth, window.innerHeight);
+  };
+  useEffect(() => {
+    const onResize = () => {
+      handleResize();
+    };
+
+    window.addEventListener('resize', onResize);
+
+    // Удаляем слушатель при размонтировании компонента
+    return () => {
+      window.removeEventListener('resize', onResize);
+    };
+  }, []);
   return (
    <div>
     
@@ -30,11 +46,11 @@ function App() {
     <LatestCar />
     <Inspiration/>
     <Reviews/>
-    <OurTeam/>
+    {/* <OurTeam/> 
     <LatestBlog/>
     <PremiumBrands/>
     <Footer/>
-    <PrivacyPolicy/>
+    <PrivacyPolicy/>  */}
    </div>
   );
 }

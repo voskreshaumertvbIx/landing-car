@@ -14,7 +14,7 @@ const Reviews = () => {
         <div className={styles.reviews_list}>
           {reviews.map((review, index) => (
             <div key={index} className={styles.reviews_img}>
-              <img src={review} alt="" />
+              <img className={styles.img}src={review} alt="" />
             </div>
           ))}
         </div>
