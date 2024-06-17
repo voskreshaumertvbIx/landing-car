@@ -20,21 +20,8 @@ import { useEffect } from 'react';
 
 
 function App() {
-  const handleResize = () => {
-    console.log('Window resized to:', window.innerWidth, window.innerHeight);
-  };
-  useEffect(() => {
-    const onResize = () => {
-      handleResize();
-    };
+  
 
-    window.addEventListener('resize', onResize);
-
-    // Удаляем слушатель при размонтировании компонента
-    return () => {
-      window.removeEventListener('resize', onResize);
-    };
-  }, []);
   return (
    <div>
     
@@ -46,11 +33,11 @@ function App() {
     <LatestCar />
     <Inspiration/>
     <Reviews/>
-    {/* <OurTeam/> 
-    <LatestBlog/>
-    <PremiumBrands/>
+    <OurTeam/> 
+     <LatestBlog/>
+    {/* <PremiumBrands/>
     <Footer/>
-    <PrivacyPolicy/>  */}
+    <PrivacyPolicy/>    */}
    </div>
   );
 }

@@ -1,27 +1,23 @@
 import React from 'react';
 import { team } from './team';
-import styles from './style.module.css'
-
-
-
+import styles from './style.module.css';
 
 const OurTeam = () => {
   return (
     <div className={styles.main_container}>
       <h1 className={styles.main_header}>our team</h1>
       <div className={styles.card_container}>
-      {
-        team.map(({name, position, src})=>{
-          return <div className={styles.card_item}>
+        {team.map(({ name, position, src }) => (
+          <div className={styles.card_item} key={name}>
             <div className={styles.text_container}>
-            <h3 className={styles.header}>{name}</h3>
-            <p className={styles.position}>{position}</p>
+              <h3 className={styles.header}>{name}</h3>
+              <p className={styles.position}>{position}</p>
             </div>
-            <img src={src} alt="" />
+            <img src={src} alt={`${name}`} />
           </div>
-        })
-      }
-   </div> </div>
+        ))}
+      </div>
+    </div>
   );
 }
 
