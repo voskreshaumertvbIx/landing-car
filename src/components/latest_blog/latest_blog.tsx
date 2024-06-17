@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./style.module.css";
+
 const blogs = [
   {
     img: "./posts/post11.png",
@@ -17,22 +18,21 @@ const blogs = [
     tag: "Exterior",
   },
 ];
+
 const LatestBlog = () => {
   return (
     <div className={styles.main_container}>
-      <h1 className={styles.header}>latest blog posts</h1>
+      <h1 className={styles.header}>Latest Blog Posts</h1>
       <div className={styles.card_container}>
-        {blogs.map(({ img, text, tag }) => {
-          return (
-            <div className={styles.card_item}>
-              <img className={styles.card_img} src={img} alt="" />
-              <button className={styles.card_tag}>{tag}</button>
-              <p className={styles.img_label}>Admin {""}November 22,2023</p>
-              <p className={styles.textblog}>{text}</p>
-            </div>
-          );
-        })}
-      </div>{" "}
+        {blogs.map(({ img, text, tag }) => (
+          <div className={styles.card_item} key={text}>
+            <img className={styles.card_img} src={img} alt="" />
+            <button className={styles.card_tag}>{tag}</button>
+            <p className={styles.img_label}>Admin {""}November 22,2023</p>
+            <p className={styles.textblog}>{text}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

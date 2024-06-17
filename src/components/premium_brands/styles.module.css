@@ -1,5 +1,6 @@
 .main_container{
   margin: auto;
+  max-width: 100%;
   
   margin: 70px 110px;
   display: flex;
@@ -46,4 +47,44 @@
 }
 .img{
   margin: 40px 0;
+  
+  
+}
+@media (max-width:1300px) {
+  .main_container{
+    margin: 60px 55px;
+  }
+  .img{
+    width: 50%;
+  }
+}
+@media (max-width: 996px) {
+  .text_container{
+    margin: 20px 0;
+  }
+  .img{
+    display: none;
+  }
+  .header{
+    font-size: 32px;
+
+  }
+  .text{
+    font-size: 13px;
+  }
+}
+@media (max-width: 568px) {
+  .text_container{
+    margin: 20px 0;
+  }
+  .img{
+    display: none;
+  }
+  .header{
+    font-size: 24px;
+
+  }
+  .text{
+    font-size: 12px;
+  }
 }

@@ -4,3 +4,8 @@
   align-items: center;
   height: 70px;
 }
+@media (max-width:590px) {
+  .privacy_container{
+    font-size: 12px;
+  }
+}

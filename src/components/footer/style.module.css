@@ -1,15 +1,16 @@
 .footerContainer {
-  
   display: flex;
-  justify-content: space-around;
-  padding: 20px 150px; 
-  
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  padding: 20px 150px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.151);
 }
 
 .footerSection {
   flex: 1;
- 
+  min-width: 200px; 
+  margin: 10px 0; 
+  text-align: left; 
 }
 
 .footerSection h4 {
@@ -36,4 +37,38 @@
   color: #000;
 }
 
+
+
+@media (max-width: 1200px) {
+  .footerContainer {
+    padding: 20px 100px;
+  }
+}
+
+
+@media (max-width: 996px) {
+  .footerContainer {
+    padding: 20px 50px;
+  }
+
+  .footerSection {
+    flex: 1 2 33%; 
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footerContainer {
+    padding: 20px 30px;
+  }
+
+  .footerSection {
+    flex: 1 1 50%; 
+    text-align: center;
+  }
+
+  .footerSection h4, .footerSection ul, .footerSection ul li {
+    text-align: left; 
+  }
+}
 

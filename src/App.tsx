@@ -15,7 +15,7 @@ import LatestBlog from './components/latest_blog/latest_blog';
 import PremiumBrands from './components/premium_brands/premium_brands';
 import Footer from './components/footer/footer';
 import PrivacyPolicy from './components/privacy_policy/privacy_policy';
-import { useEffect } from 'react';
+
 
 
 
@@ -35,9 +35,9 @@ function App() {
     <Reviews/>
     <OurTeam/> 
      <LatestBlog/>
-    {/* <PremiumBrands/>
-    <Footer/>
-    <PrivacyPolicy/>    */}
+    <PremiumBrands/>
+     <Footer/>
+    <PrivacyPolicy/>     
    </div>
   );
 }

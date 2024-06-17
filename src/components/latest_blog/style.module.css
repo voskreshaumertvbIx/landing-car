@@ -21,9 +21,10 @@
 
 .card_item {
   position: relative;
-  margin: 0 15px;
-  width: 33%;
-  max-height: 100%;
+  margin: 15px;
+  width: calc(33.33% - 30px); 
+  box-sizing: border-box;
+  text-align: center; 
 }
 
 .card_tag {
@@ -57,6 +58,9 @@
 }
 
 @media (max-width: 1200px) {
+  .card_item {
+    width: calc(50% - 30px); 
+  }
   .img_label {
     font-size: 14px;
   }
@@ -71,9 +75,8 @@
     flex-direction: column;
     justify-content: center;
   }
-  .card_container {
-    flex-wrap: wrap;
-    justify-content: center; 
+  .card_item {
+    width: calc(50% - 30px); 
   }
   .img_label {
     font-size: 14px;
@@ -88,19 +91,22 @@
 }
 
 @media (max-width: 768px) {
-  .card_item:last-child {
-    margin-top: 20px;
+  .card_item {
+    width: calc(100% - 30px); 
   }
   .card_tag {
     display: none;
   }
   .img_label {
     margin: 0;
-    font-size: 10px;
+    font-size: 14px;
   }
   .textblog {
     margin: 0;
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .card_img{
+    width:70%
   }
 }
 
