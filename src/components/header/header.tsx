@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styles from "./style.module.css";
+import gsap from 'gsap';
 
 const links = [
   { name: "Home" },
@@ -35,6 +36,8 @@ const Header = () => {
       window.removeEventListener('touchmove', handleScroll);
     };
   }, [menuOpen]);
+ 
+
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -43,9 +46,9 @@ const Header = () => {
   const closeMenu = () => {
     setMenuOpen(false);
   };
-
+  
   return (
-    <div className={styles.header_container}>
+    <div className={styles.header_container}> 
       <div className={styles.logo_container}>
         <img className={styles.main_logo} src="./img/logo.svg" alt="site logo" />
         <img className={styles.phone_logo} src="./img/phone_icon.svg" alt="phone logo" />

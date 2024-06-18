@@ -2,7 +2,7 @@
   text-transform: capitalize;
   margin: 5rem 240px ;
   max-width: 100%;
-
+  background-color:white;
 
 
 
@@ -49,6 +49,7 @@ li{
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 40px;
+  background-color:white;
   
 }
 .search_car_container{

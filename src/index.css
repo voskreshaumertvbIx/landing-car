@@ -6,6 +6,7 @@ body {
   padding: 0;
   overflow-x: hidden; /* Отключить горизонтальную прокрутку */
   box-sizing:border-box;
+  background-color:white!important;
 }
 
 body {
